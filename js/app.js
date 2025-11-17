@@ -47,7 +47,9 @@ function renderProducts() {
   list.innerHTML = products.map(p => `
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="${p.img}" class="card-img-top" alt="${p.name}">
+        <a href="product.html?id=${p.id}" class="text-decoration-none" style="cursor: pointer;">
+          <img src="${p.img}" class="card-img-top product-image" alt="${p.name}" title="Click para ver más detalles">
+        </a>
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">${p.name}</h5>
           <p class="card-text fw-bold text-success">$${p.price.toLocaleString('es-CL')}</p>

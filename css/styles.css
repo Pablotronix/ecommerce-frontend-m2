@@ -31,6 +31,18 @@ body {
 .card-img-top {
   object-fit: cover;
   height: 250px; /* Altura fija para imágenes */
+  padding: 15px; /* Espacio interno para que no ocupe todo el borde */
+  object-fit: contain; /* Mantiene proporción sin recortar */
+  background-color: #fff; /* Fondo blanco para contraste */
+}
+
+.product-image {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .card-body {
