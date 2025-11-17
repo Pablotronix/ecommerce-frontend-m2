@@ -18,11 +18,29 @@ body {
 /* === Cards de productos === */
 .card {
   transition: transform 0.2s ease-in-out;
+  height: 100%; /* Altura uniforme */
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px; /* Altura fija para imágenes */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body .btn-group {
+  margin-top: auto; /* Empuja los botones al final */
 }
 
 .card-title {
@@ -56,6 +74,23 @@ footer {
 .badge {
   font-size: 0.8rem;
   padding: 0.4em 0.6em;
+}
+
+/* === Carrito de compras === */
+.list-group-item img {
+  object-fit: cover;
+}
+
+.btn-group .btn:disabled {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* === Alertas flotantes === */
+.cart-alert {
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* === Responsive tweaks === */
