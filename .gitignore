@@ -47,3 +47,6 @@ node_modules/
 
 # Output of 'npm pack'
 *.tgz
+
+# Guías de aprendizaje personales (solo README.md es público)
+GUIA_*.md
