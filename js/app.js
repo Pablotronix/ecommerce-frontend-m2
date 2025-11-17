@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 2, 
-    name: "Polera React", 
+    name: "Polera 404", 
     price: 12000, 
     img: "img/polera404.png",
     description: "¿Te sientes fuera de servicio? Esta polera negra lo dice todo por ti: \"Error 404, Lo siento, no estoy disponible\" — ideal para esos días en que tu energía está en mantenimiento.",
